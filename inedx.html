@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSenid - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper d-lg-flex">
+        <modal class="sidebar left hide-xs" role="side-bar" id="sidebar">
+            <div class="sidebar--content">
+                <div class="logo">
+                    <img src="https://www.hsenidbiz.com/images/logo-hsenidbiz.png" alt="hSenid">
+                    <button class="btn d-xl-none close-menu"><span class="material-symbols-outlined">close</span></button>
+                </div>
+                <ul role="list">
+                    <li><a href="">Dashboard</a></li>
+                    <li><a href="">Invoices</a></li>
+                    <li><a href="">Menu Items</a></li>
+                    <li><a href="">Menu Items</a></li>
+                    <li><a href="">Menu Items</a></li>
+                </ul>
+            </div>
+        </modal>
+        <div class="content w-100">
+            <nav role="navigation" class="d-flex align-items-center justify-content-between p-3">
+                <div class="d-flex align-items-center">
+                    <button class="btn mt-1 me-2 toggle-xs d-xl-none"><span class="material-symbols-outlined">menu</span></button>
+                    <button class="btn mt-1 me-2 toggle-xl d-none d-xl-block"><span class="material-symbols-outlined">menu</span></button>
+                    <span role="title">Dashboard</span>
+                </div>
+                <div class="d-flex align-content-center">
+                    <div class="me-3">
+                        <button class="btn btn-outline-light d-flex theme-mode-btn">
+                            <span class="mode-icon material-symbols-outlined">dark_mode</span>
+                            <span class="mode-text ms-2">Dark Mode</span>
+                        </button>
+                    </div>
+                    <div class="d-none d-md-block mt-2">
+                        <span>Rajendar</span>
+                    </div>
+                </div>
+            </nav>
+            <div class="main">
+                <div class="main--top-bar d-md-flex align-items-center justify-content-between bg-area px-4 px-md-5 py-3">
+                    <div>
+                        <h1 class="styled-h4">Package Plan</h1>
+                        <p class="mb-0">
+                            Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                    </div>
+                    <button class="btn btn-primary d-flex"><span class="material-symbols-outlined me-2">add</span>New Package</button>
+                </div>
+                <div class="main--content p-4 p-md-5">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Package Name</th>
+                                    <th scope="col">Last Payment</th>
+                                    <th scope="col">Next Payment</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Expire In</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>ABC-Standard</td>
+                                    <td class="d-grid">Aug 21, 2021<a href="#" target="_blank">Download Invoice</a></td>
+                                    <td>Aug 21, 2021/ Yearly</td>
+                                    <td>$3500</td>
+                                    <td>Active</td>
+                                    <td>365 Days</td>
+                                    <td><a class="btn btn-primary d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="material-symbols-outlined me-2">visibility</span>View</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>ABC-Standard</td>
+                                    <td class="d-grid">Aug 21, 2021<a href="#" target="_blank">Download Invoice</a></td>
+                                    <td>Aug 21, 2021/ Yearly</td>
+                                    <td>$3500</td>
+                                    <td>Active</td>
+                                    <td>365 Days</td>
+                                    <td><a class="btn btn-primary d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="material-symbols-outlined me-2">visibility</span>View</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>ABC-Standard</td>
+                                    <td class="d-grid">Aug 21, 2021<a href="#" target="_blank">Download Invoice</a></td>
+                                    <td>Aug 21, 2021/ Yearly</td>
+                                    <td>$3500</td>
+                                    <td>Active</td>
+                                    <td>365 Days</td>
+                                    <td><a class="btn btn-primary d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="material-symbols-outlined me-2">visibility</span>View</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>ABC-Standard</td>
+                                    <td class="d-grid">Aug 21, 2021<a href="#" target="_blank">Download Invoice</a></td>
+                                    <td>Aug 21, 2021/ Yearly</td>
+                                    <td>$3500</td>
+                                    <td>Active</td>
+                                    <td>365 Days</td>
+                                    <td><a class="btn btn-primary d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="material-symbols-outlined me-2">visibility</span>View</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>ABC-Standard</td>
+                                    <td class="d-grid">Aug 21, 2021<a href="#" target="_blank">Download Invoice</a></td>
+                                    <td>Aug 21, 2021/ Yearly</td>
+                                    <td>$3500</td>
+                                    <td>Active</td>
+                                    <td>365 Days</td>
+                                    <td><a class="btn btn-primary d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="material-symbols-outlined me-2">visibility</span>View</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>ABC-Standard</td>
+                                    <td class="d-grid">Aug 21, 2021<a href="#" target="_blank">Download Invoice</a></td>
+                                    <td>Aug 21, 2021/ Yearly</td>
+                                    <td>$3500</td>
+                                    <td>Active</td>
+                                    <td>365 Days</td>
+                                    <td><a class="btn btn-primary d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="material-symbols-outlined me-2">visibility</span>View</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>ABC-Standard</td>
+                                    <td class="d-grid">Aug 21, 2021<a href="#" target="_blank">Download Invoice</a></td>
+                                    <td>Aug 21, 2021/ Yearly</td>
+                                    <td>$3500</td>
+                                    <td>Active</td>
+                                    <td>365 Days</td>
+                                    <td><a class="btn btn-primary d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="material-symbols-outlined me-2">visibility</span>View</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>ABC-Standard</td>
+                                    <td class="d-grid">Aug 21, 2021<a href="#" target="_blank">Download Invoice</a></td>
+                                    <td>Aug 21, 2021/ Yearly</td>
+                                    <td>$3500</td>
+                                    <td>Active</td>
+                                    <td>365 Days</td>
+                                    <td><a class="btn btn-primary d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="material-symbols-outlined me-2">visibility</span>View</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td>ABC-Standard</td>
+                                    <td class="d-grid">Aug 21, 2021<a href="#" target="_blank">Download Invoice</a></td>
+                                    <td>Aug 21, 2021/ Yearly</td>
+                                    <td>$3500</td>
+                                    <td>Active</td>
+                                    <td>365 Days</td>
+                                    <td><a class="btn btn-primary d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="material-symbols-outlined me-2">visibility</span>View</a></td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- summary view on modal start -->
+    <div class="modal right fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Package Plan</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-lg-5">
+                <div class="p-4 mb-4">
+                    <h4>Popular Business Plan / 3m</h4>
+                    <span>Minimum subsciption: <strong>1200 INR</strong></span>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, minus?
+                    </p>
+                    <div class="bg-light p-4 mb-3">
+                        <ul role="list" class="ps-2">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptatem!</li>
+                            <li>Lorem ipsum dolor sit amet consectetur.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                        </ul>
+                        <a href="">Learn More</a>
+                    </div>
+                    <div>
+                        <button class="btn btn-secondary me-2 mb-2 mb-sm-0">Unsubscribe</button>
+                        <button class="btn btn-primary">Change Package</button>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center justify-content-between p-4">
+                    <div class="flex-fill me-lg-4">
+                        <div>
+                            <h5>Membership Plan</h5>
+                            <p>Turbo Business Plan / 3m</p>
+                        </div>
+                        <div class="d-xl-flex align-items-center justify-content-between">
+                            <div>
+                                <h5>Last Invoice Date</h5>
+                                <p>Oct 20, 2021</p>
+                            </div>
+                            <div>
+                                <h5>Next Payment Date</h5>
+                                <p>Oct 20, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-info p-4 p-lg-5 flex-fill text-white">
+                        <div>
+                            <h5>Due</h5>
+                            <h4>$300.00</h4>
+                        </div>
+                        <div class="my-4">
+                            <input type="text" class="form-control" placeholder="Enter Code">
+                            <small>10% Off Coupon</small>
+                        </div>
+                        <div class="mb-4">
+                            <h5>Total to pay</h5>
+                            <h5>$250.00</h5>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
+
+
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="js/global.js"></script>
+</body>
+</html>
